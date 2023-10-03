@@ -1,0 +1,11 @@
+.userProfile {
+  @apply grid items-center grid-cols-[auto__1fr] gap-7;
+  grid-template-areas: "avatar username" "bio bio";
+}
+
+@media (min-width: 768px) {
+  .userProfile {
+    @apply grid-cols-2 gap-6;
+    grid-template-areas: "avatar username" "avatar bio";
+  }
+}
